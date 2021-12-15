@@ -1,0 +1,11 @@
+address {
+    display: block;
+    font-style: italic;
+    cursor: pointer;
+  }
+  .container-fluid{
+    background: rgba(0, 0, 0, 0.5);  
+  }
+  .social:hover{
+    border-radius: 20px;
+  }

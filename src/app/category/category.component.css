@@ -1,0 +1,10 @@
+.d-flex .flex-fill{
+    border-radius: 5px;
+    margin: 15px;
+}
+.flex-fill{
+    /* background-image: url('https://media.giphy.com/media/LPxxvn1UFGyOZLkVVa/giphy.gif'); */
+    background-image: url('https://media.giphy.com/media/xTiTniuHdUjpOlNo1q/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }

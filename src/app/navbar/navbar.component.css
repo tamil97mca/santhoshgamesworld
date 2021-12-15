@@ -1,0 +1,10 @@
+.navbar-nav {
+    margin-left: auto;
+}
+.active{
+    font-style: italic;
+    font-weight:bolder;
+}
+/* .navbar-brand{
+    cursor: pointer;
+} */

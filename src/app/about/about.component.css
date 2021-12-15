@@ -1,0 +1,10 @@
+.d-flex .flex-fill{
+    border-radius: 5px;
+    margin: 15px;
+}
+ul li
+{
+    list-style-image: url("../../assets/logo/logo.png");
+    list-style-position: inside;
+    text-align: justify;
+}
