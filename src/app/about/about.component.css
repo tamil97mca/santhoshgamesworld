@@ -4,7 +4,12 @@
 }
 ul li
 {
-    list-style-image: url("../../assets/logo/logo.png");
+    list-style-image: url("../../assets/logo/rocket.png");
     list-style-position: inside;
     text-align: justify;
 }
+/* .flex-fill{
+    background-image: url('https://media.giphy.com/media/LPxxvn1UFGyOZLkVVa/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+   } */

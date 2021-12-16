@@ -1,0 +1,97 @@
+{
+    "productList":[
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "HDMI":"1",
+                "Sound":"120Hz Output",
+                "USB":"4",
+                "Resolution":"4320p",
+                "Controllers":"DualSense Wireless Controller"
+            },
+            "type": "Ps2 Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        },
+
+        {
+            "productTitle": "Ps2 Console",
+            "Brand": "Sony Entertainment",
+            "productDetails":{
+                "controllers": "Wired and Wireless Available"
+            },
+            "type": "Ps2Console"
+        }
+    ]
+}

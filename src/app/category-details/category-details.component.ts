@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryDetailsComponent implements OnInit {
 
-  constructor() { }
+  url = '../../assets/productDetail.json';
+  constructor(private http : HttpClient) 
+  {
+    this.http.get(this.url).subscribe((result => {
+      console.log("result", result);
+    }))
+  }
 
   ngOnInit() {
   }

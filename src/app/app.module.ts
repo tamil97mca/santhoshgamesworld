@@ -12,6 +12,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CategoryComponent } from './category/category.component';
 import { CategoryDetailsComponent } from './category-details/category-details.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,7 +5,9 @@
 
   <div class="p-3 flex-fill bg-warning" *ngFor="let i of listOfCategory">
     <h6 class="text-warning">{{i.categoryName}}</h6>
+    <a routerLink="/category-details">
     <button type="button" class="btn btn-outline-info">{{i.view}}</button>
+  </a>
   </div>
 
   <!-- <div class="p-2 flex-fill bg-warning">
