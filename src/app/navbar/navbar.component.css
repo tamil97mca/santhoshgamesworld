@@ -8,3 +8,13 @@
 /* .navbar-brand{
     cursor: pointer;
 } */
+.navbar-background
+{
+  background: #2d2ed4;
+  background: -webkit-gradient(linear, left top, right top, from(#e24997), to(#2d2ed4));
+  background: linear-gradient(to right, #e24997, #2d2ed4);
+}
+.navbar-brand{
+  font-style: italic;
+  font-weight:bolder;
+}

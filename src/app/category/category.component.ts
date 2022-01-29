@@ -11,8 +11,8 @@ export class CategoryComponent implements OnInit {
 
   listOfCategory: any = [];
 
-  constructor() 
-  { 
+  constructor()
+  {
     this.listOfCategory = [
       {categoryName: 'Latest Games', view: 'view'},
       {categoryName: 'Most popular', view: 'view'},

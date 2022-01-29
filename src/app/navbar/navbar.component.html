@@ -1,29 +1,34 @@
-<nav class="navbar navbar-expand-sm bg-warning navbar-light navbar-fixed-top sticky-top">
-  <div class="container-fluid">
-    <a (dblclick)="login()" class="navbar-brand text-dark text-wrap">
-    <i class="fab fa-xbox"></i>
-      <span class="text-danger"> S</span>anthosh <span class="text-danger">G</span>ames <i class="fab fa-playstation"></i>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item"  *ngFor="let i of navpath">
-          <a class="nav-link" [routerLink]=[i.routerLink] [routerLinkActive]=[i.routerLinkActive]><i class={{i.icon}}></i>&nbsp;{{i.DisplayName}}</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fas fa-info-circle"></i>&nbsp;About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" routerLinkActive="active"><i class="fas fa-globe"></i>&nbsp;Contact Us</a>
-        </li>     -->
-      </ul>
+<div [ngClass]="{'dark-theme': isDarkTheme}">
+  <nav class="navbar navbar-expand-sm navbar-background navbar-dark navbar-fixed-top sticky-top">
+    <div class="container-fluid">
+      <a (dblclick)="openDialog()" class="navbar-brand text-light text-wrap">
+      <i class="fab fa-xbox"></i>
+        Santhosh Games <i class="fab fa-playstation"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item" *ngFor="let i of navpath">
+            <a class="nav-link" [routerLink]=[i.routerLink] [routerLinkActive]=[i.routerLinkActive] [skipLocationChange]= true><i class={{i.icon}}></i>&nbsp;{{i.DisplayName}}</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fas fa-info-circle"></i>&nbsp;About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active"><i class="fas fa-globe"></i>&nbsp;Contact Us</a>
+          </li>     -->
+        </ul>
+        <!-- <mat-slide-toggle color="primary" (click)="changeTheme()">Dark Theme</mat-slide-toggle> -->
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <div>
-    <router-outlet></router-outlet>
-  </div>
-  <app-footer></app-footer>
+    <div>
+      <!-- <mat-progress-bar mode="indeterminate" value="accent"></mat-progress-bar> -->
+      <router-outlet (activate)="onActivate()"></router-outlet>
+    </div>
+    <app-footer></app-footer>
+
+</div>

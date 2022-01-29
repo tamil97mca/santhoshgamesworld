@@ -1,0 +1,26 @@
+<h1 mat-dialog-title class="text-center text-accent" (dblclick)="data.email ='tamil@gmail.com'">Admin Only</h1>
+<div mat-dialog-content>
+  <p class="text-wrap" (dblclick)="data.password = 'Pass@123'">Admin Credential's Only</p>
+
+  <mat-form-field appearance="fill">
+    <mat-label class="text-wrap">Email</mat-label>
+    <input matInput [(ngModel)]="data.email" type="email">
+    <button mat-icon-button matSuffix>
+      <mat-icon>edit</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label class="text-wrap">Password</mat-label>
+    <input matInput [(ngModel)]="data.password" [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+
+</div>
+<div mat-dialog-actions style="margin: 0 auto;">
+  <button mat-stroked-button color="accent" (click)="onNoClick()" class="text-wrap">No Thanks</button>
+  <button mat-stroked-button color="accent" [mat-dialog-close]="data" cdkFocusInitial class="text-wrap">LogIn</button>
+</div>
